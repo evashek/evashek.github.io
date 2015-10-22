@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<!--  
+		=================================
+					PORTFOLIO OF EVA SHEK
+								May 2015
+			
+			Uses Google Fonts and the
+			jQuery library hosted by Google.
+
+			** Images shown were taken
+			by myself unless specified **
+		=================================
+	-->
+	<title>Portfolio</title>
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<h1 id="myname">Eva Shek</h1>
+	<div id="navi">
+		<div class="grey"><a href="#" class="buttons transparent" rel="about">ABOUT</a></div>
+		<div class="grey"><a href="#" class="buttons" rel="work">COURSE WORK</a></div>
+		<div class="grey"><a href="#" class="buttons" rel="prof">EXPERIENCE</a></div>
+		<div class="grey"><a href="#" class="buttons" rel="contact">CONTACT</a></div>
+	</div>
+	<div id="desc">
+		<div id="about">
+			Grew up on the island of Oahu in beautiful Hawai'i. Studied at the University of Hawai'i at Manoa (UHM) from 2010-2014 and received a Bachelor of Science degree in Computer Science and a Minor in Japanese. During my time at UHM, the courses I took revolved around building my skills as a Software Engineer (Java programming, database management, etc). Among other related courses, I have also taken classes like Human Computer Interaction and Gamification. My main interest lies in web development (front and back-end) and hope to eventually try my hand in game development.
+		</div>
+		<div id="work" class="hide">
+			<div>
+				<h3>LEAF</h3>
+				<p>Text-based adventure game written in Lisp with three other students. The player's goal is to get themself (a young leaf) to the Tree of Knowledge by heading to different towns where leaves will pose a question they must answer to move on. Getting an answer wrong will not immediately cause them to fail the game, as their progress determines whether they continue on a "win" or "lose" path. I was in charge of writing the function where the character moves between towns.</p>
+				<strong>Used:</strong> Common Lisp, LispWorks<br>
+				<strong>Related Links</strong><br>
+				<a href="https://evashek.wordpress.com/leaf/">More Info</a><br>
+				<a href="http://www2.hawaii.edu/~nreed/ics313/assignments/assign6.html">Assignment Page</a>
+			</div>
+			<div>
+				<h3>1-Mile</h3>
+				<p>1-Mile was born from my participation in Startup Weekend 2013 hosted by the university. The purpose of the event was to try to launch a startup business with your team within a weekends time by preparing a business plan and presentation. Although I did not take part in programming the application, I helped conceptualize, write a business plan, and apply my research and field work results to make improvements. The application was meant to be location-based broadcasting app where only people within one mile radius of you will be able to see what you have posted. The more "likes" a post gains, the bigger the radius.</p>
+				<strong>Related Links</strong><br>
+				<a href="https://evashek.wordpress.com/1-mile/">More Info</a><br>
+				<a href="http://uofhawaii.startupweekend.org/">Startup Weekend Event Page</a><br>
+				<a href="https://www.facebook.com/media/set/?set=a.10152061063673203.1073741827.198682603202">Event Pictures</a>
+			</div>
+			<div>
+				<h3>Surferpedia</h3>
+				<p>As the name suggests, Surferpedia is meant to be an encyclopedia of surfers that grows based on user contribution (like Wikipedia). The project had several iterations starting from the middle of the semester such as first building the initial site, creating a database, adding the ability to register for a new account, and upgrading text input into selection menus. The final test, in a group of two, was to include one extra feature. I chose to create a user profile page which reported the user's contributions and viewing history.</p>
+				<strong>Used:</strong> Java, Play Framework, HTML, CSS, Twitter Bootstrap, CloudBees, Eclipse, Git<br>
+				<strong>Related Links</strong><br>
+				<a href="https://evashek.wordpress.com/surferpedia/">More Info</a><br>
+				<a href="https://github.com/RobNamahoe/surferpedia">Repository</a>
+			</div>
+			<div>
+				<h3>Dive Planner</h3>
+				<p>A dive planner is a helpful tool which divers use to outline their next dive as safely as possible given the effects of diving such as nitrogen buildup in one's bloodstream. Most of the time, this is done manually by learning how to read a diving table (which is quite complicated) and doing calculations. The dive planner web app is essentially this diving table, but will calculate and show only the safe depths or times to dive/rest. My participation involved front end development and inputing dive table data into the database.</p>
+				<strong>Used:</strong> HTML, CSS, XAMPP (Apache, MySQL), PHP, Google Charts API, Git<br>
+				<strong>Related Links</strong><br>
+				<a href="http://www.madisonscuba.com/wp-content/uploads/2013/01/padi_rdp.jpeg">Dive Table Example</a><br>
+				<a href="https://github.com/asikkink/ics414SCUBA">Repository</a><br>
+				<a href="https://www.youtube.com/watch?v=s0qEtub1Y80">Screencast Demo</a>
+			</div>
+		</div>
+		<div id="prof" class="hide">
+			<h3>Professional Experience</h3>
+			<strong>Software Engineering Intern</strong><br>
+			<i>textPlus, Inc. (Marina del Rey, California)<br>
+			May 2012 - August 2012</i><br>
+			<p>Created a web prototype of the textPlus app which allows users to text through their devices for free. Basic functions included ability to log in/log out, start a text conversation if user knows the other party's textPlus/phone number, view existing conversations, redirection if user lands on a page they're not supposed to (ex. they haven't logged in). To build the prototype, calls were made to the textPlus API and languages/tools like HTML, CSS, Javascript, and JSP were used.</p>
+			<a href="http://www.textplus.com/">Company Website</a>
+		</div>
+		<div id="contact" class="hide contact">
+			evashek@hawaii.edu<br><a href="https://www.linkedin.com/pub/eva-shek/7a/b8a/683">LinkedIn</a><br><a href="https://evashek.wordpress.com/">WordPress</a><br>808-741-5118
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#navi a').on('click', function(){
+			$('#navi a').removeClass('transparent'); /* remove 'transparent' from previous selection */
+			$(this).addClass('transparent');
+
+			var divid = $(this).attr('rel');
+			$('#' + divid).show().siblings('div').hide();
+		});
+
+		$('#work > div').hover(
+			function() {
+				$(this).addClass('highlight');
+			},
+			function() {
+				$(this).removeClass('highlight');
+			}
+		);
+	</script>
+</body>
+</html>

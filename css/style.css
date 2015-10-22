@@ -1,0 +1,117 @@
+body {
+	font-family: 'Slabo 27px', serif;
+	margin: 50px 100px;
+}
+
+a[rel="about"] {
+	display: block;
+	background-image: url('https://lh3.googleusercontent.com/-Jao5TPqaGYk/VWknX5zFldI/AAAAAAAAALU/kf4x1fJm9a8/s800/about.png');
+	background-size: auto 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+a[rel="work"] {
+	display: block;
+	background-image: url('https://lh3.googleusercontent.com/-niEqfYCXUnQ/VWknXz4b3sI/AAAAAAAAALQ/7iPqJsksSh8/s800/course3.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+a[rel="prof"] {
+	display: block;
+	background-image: url('https://lh3.googleusercontent.com/-K0bU6ubi3RE/VWknY9_-ZyI/AAAAAAAAALg/cnjL668JrpM/s800/prof.png');
+	background-size: auto 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+a[rel="contact"] {
+	display: block;
+	background-image: url('https://lh3.googleusercontent.com/-GWxGmIA-edM/VWrrHdLdtoI/AAAAAAAAAMw/BplHjFPSNLA/s800/contact2.png');
+	background-size: auto 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #63c9a4;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+#myname {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	font-size: 4em;
+}
+
+#navi {
+	float: left;
+	width: 38%;
+}
+
+#desc {
+	position: relative;
+	float: right;
+	width: 58%;
+	height: 380px;
+	padding: 15px;
+	overflow: auto;
+}
+
+#work > div {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#work a {
+	margin-left: 5px;
+}
+
+.buttons {
+	width: 100%;
+	height: 200px;
+	line-height: 200px;
+	margin: 0 10px 10px 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25em;
+	color: white;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	text-align: center;
+	float: left;
+}
+
+.grey {
+	width: 46%;
+	height: 200px;
+	float: left;
+	margin: 0 10px 10px 0;
+	background-color: #d8d8d8;
+}
+
+.hide {
+	display: none;
+}
+
+.contact {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.transparent {
+	opacity: 0.5;
+}
+
+.highlight {
+	background-color: #f6f6f6;
+}
